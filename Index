@@ -1,0 +1,20 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora IMC</title>
+</head>
+<body>
+    <h2>Ingrese sus datos</h2>
+    <form action="resultado.jsp" method="post">
+        Nombre: <input type="text" name="nombre" required><br>
+        Usuario: <input type="text" name="usuario" required><br>
+        Contraseña: <input type="password" name="contraseña" required><br>
+        Edad: <input type="number" name="edad" required><br>
+        Sexo: <select name="sexo"><option value="M">Masculino</option><option value="F">Femenino</option></select><br>
+        Estatura (m): <input type="text" name="estatura" required><br>
+        Peso (kg): <input type="text" name="peso" required><br>
+        <input type="submit" value="Calcular IMC">
+    </form>
+</body>
+</html>

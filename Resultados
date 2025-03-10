@@ -1,0 +1,16 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resultado IMC</title>
+</head>
+<body>
+    <h2>Resultado de su IMC</h2>
+    <%
+        double estatura = Double.parseDouble(request.getParameter("estatura"));
+        double peso = Double.parseDouble(request.getParameter("peso"));
+        double imc = peso / (estatura * estatura);
+    %>
+    <p>Su IMC es: <%= imc %></p>
+</body>
+</html>
